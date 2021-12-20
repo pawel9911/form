@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <form>
+        <div class="box">
+            <label for="name">Podaj imię: </label>
+            <input type="text" name="name" id="name"/>
+            
+            <label for="surname">Podaj nazwisko: </label>
+            <input type="text" name="surname" id="surname"/>
+            
+            <label for="type">Wybierz typ:</label>
+            <select name="type" id="type" >
+              <option hidden></option>
+              <option value="osoba">osoba</option>
+              <option value="firma">firma</option>
+            </select>
+            
+            <label for="id" class="uniqueCode">Pesel/NIP</label>
+            <input type="number" name="id" id="identifier"/>
+            
+            <label for="image">Dodaj zdjęcie</label>
+            <input type="file" name="image" id="image" accept="image/jpg, image/jpeg">
+            <div class="prevImage">
+                <img id="preview" src="" alt="Image preview">
+                <span>Image Preview</span>
+            </div>
+            
+            <button type="submit" name="submitButton" id="submitButton">Wyślij Formularz</button>
+        </div>
+    </form>
+</body>
+</html>
